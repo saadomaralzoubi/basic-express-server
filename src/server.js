@@ -9,7 +9,6 @@ const validator = require("./middlewares/validator.js");
 
 const app = express();
 
-//localhost:3000/person?name=saad
 app.get("/person", validator, (req, res) => {
   res.json({
     name: req.query.name,
